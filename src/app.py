@@ -17,6 +17,8 @@ FreedomLog.init(
 def create_app():
     app = Flask(__name__)
 
+    app = Flask(__name__, static_folder='templates/static')
+
     load_modules(app)
 
     return app
