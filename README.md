@@ -1,16 +1,3 @@
-# Project Title
+# TheRootLinux <Platform>
 
-A brief description of your project.
-
-## Installation
-
-Instructions on how to install your project.
-
-## Usage
-
-How to use the project.
-
-## License
-
-Specify the license here.
-
+Welcome the platform, this repository is related to our platform source code, which includes our compute cloud, free non profit.
