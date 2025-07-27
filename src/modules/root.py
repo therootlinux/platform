@@ -1,4 +1,6 @@
+from flask import render_template
+
 def init(app):
-    @app.route('/module1')
+    @app.route('/')
     def module_root():
-        return "Landing Here!"
+        return render_template('index.html')

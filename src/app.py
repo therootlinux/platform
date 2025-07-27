@@ -1,10 +1,9 @@
 import os
 import importlib.util
-from flask import Flask
+from flask import Flask, render_template
 import FreedomLog
 
 from .loaders.modules import load_modules
-
 
 FreedomLog.init(
     path="logs",
@@ -15,15 +14,9 @@ FreedomLog.init(
     format_option=2
 )
 
-
-
 def create_app():
     app = Flask(__name__)
 
-    @app.route('/')
-    def home():
-        return "Hello from src.app!"
-
-    load_modules(app)  
+    load_modules(app)
 
     return app
